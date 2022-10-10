@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto",sans-serif;
+}
+
+.dashboard-container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    height: 100vh;
+}
+
+.dashboard-links{
+    background-color: #1992D4;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+.dashboard-content{
+    display: grid;
+    grid-template-columns: 3fr 1.2fr;
+}
+
+
+
+
+/*---------------------- DASHBOARD LINKS--------------------- */
+.dashboard-links h1{
+    color: white;
+    margin-top: 1rem;
+    margin-left: 1px;
+    margin-bottom: 2.5rem;
+}
+
+
+.dashboard-links i{
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+    width: 2.5rem;
+    color: white;
+}
+
+
+.dashboard-links p {
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+    transition: .1s ;
+}
+
+.dashboard-links p:hover{
+    transform: scale(1.1);
+}
+
+.dashboard-links h1 i {
+    font-size: 2rem;
+}
+
+.settings{
+    margin-top: 2.5rem;
+}
+
+
+/*---------------------- DASHBOARD Profile--------------------- */
+/* Search Bar */
+.dashboard-profile{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.search-bar{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.search-container{
+    display: grid;
+    place-items: center;
+    margin-left: 2rem;
+    
+    
+}
+
+.search-bar p {
+    width: 100%;
+}
+.search-container input{
+    width: 80%;
+    height: 30px;
+    background-color: #E2E8F0;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    margin-left: 1em;
+}
+
+.search-container i{
+    font-size: 1.2rem;
+}
+
+.notification{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.notification i{
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+.notification img{
+    display: block;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.notification h3{
+    display: inline-block;
+    
+}
+
+/* SAVE UPLOAD */
+
+.save-upload{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+}
+
+.profile{
+    margin-left: 2rem;
+    display: flex;
+    place-items: center;
+    gap: 1rem;
+   
+}
+.save-upload img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.profile-details p, .profile-details h2{
+    margin: .1em 0;
+}
+
+.uploads{
+    display: flex;
+    place-items: center;
+    gap: 2em;
+}
+.btn{
+    background-color: #1992D4;
+    font-size: 1rem;
+    padding: .6em 2em;
+    outline: none;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    color: white;
+    transition: .1s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+/*---------------------- DASHBOARD Content--------------------- */
+/* Dashboard Portfolio */
+.dashboard-content{
+    background-color: #E2E8F0;
+}
+
+
+.main-content{
+    margin-left: 2rem;
+}
+
+.main-content h3{
+    margin: 1rem 0;
+}
+
+.projects{
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 1em;
+}
+
+
+.card{
+    background-color: white;
+    width: 90%;
+    padding: 1em;
+    border-left: 10px solid orange;
+    border-top-left-radius: .5em;
+    border-bottom-left-radius: .5em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-links{
+    margin-top: 2em;
+    margin-right: .5em;
+    font-size: 1.3rem;
+    letter-spacing: .5rem;
+    text-align: right;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.card-links i:hover{
+    transform: scale(1.3);
+}
+
+
+/* Dashboard Side */
+
+.side-announcements h3{
+    margin: 1rem 0;
+}
+
+.announcement-container{
+    background-color: white;
+    padding: .5rem;
+    width: 80%;
+    border-radius: .5em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.announcement-details{
+    padding: 1rem 2rem;
+}
+
+
+.side-trending h3{
+    margin: 1rem 0;
+}
+
+.trending-container{
+    background-color: white;
+    width: 80%;
+    border-radius: .5em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.trending-container img{
+    margin-left: 1.5rem;
+    width: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.trending-details{
+    display: flex;
+    gap: .5rem;
+    place-items: center;
+    padding: .5rem 0;
+}
+
+.underline{
+    margin: 0 auto;
+    width: 90%;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.651);
+}
+
+
+
+
+
+
+
